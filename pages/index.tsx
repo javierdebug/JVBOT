@@ -36,7 +36,7 @@ const EXAMPLES = [
   { text: "who are you?\n", label: "intro" },
 ];
 
-const API_KEY = process.env.COHERE_API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_COHERE_API_KEY;
 const ANSWERS = {
   intro: (
     <p>
