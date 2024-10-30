@@ -1,47 +1,37 @@
-# TypeScript Next.js example
+# Personal AI Chatbot - JavierD
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+Live site: [JVBOT](https://jvbot.vercel.app/)
 
-## Deploy your own
+## Project Overview
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+This AI-powered chatbot was created to offer potential clients and collaborators an interactive experience, helping users understand my expertise as a frontend developer. Whether it's answering questions about my skills, past projects, or the technologies I use, this chatbot provides responses to support informed engagement. This chatbot was built with a text classifier model from [CoHere](https://cohere.com/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+## Features
 
-## How to use it?
+- **Personalized Responses**: Answers questions about my background, frontend development experience, and contact information.
+- **24/7 Availability**: Accessible at any time, so users can reach out whenever it's convenient.
+- **Tech-Focused**: Provides insights into the technologies I work with, like Next.js, Tailwind CSS, and more.
+- **Multilingual**: Answers your questions in English and Spanish.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Example questions:
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
+> _"What frontend frameworks are you proficient in?"_
 
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
+> _"What is your contact information?"_
 
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
+> _"Tell me about your english level."_
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Technologies
 
-## Notes
+- **Frontend**: Next.js, Tailwind CSS
+- **AI**: CoHere API
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+## Screenshots
 
-```
-npm install --save-dev typescript
-```
+### General chat:
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+![General chat](./public/general-jvbot-chat.jpg)
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+### Language selection:
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+![Language selection](./public/language-selection.png)
