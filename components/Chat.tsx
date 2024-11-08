@@ -131,12 +131,12 @@ const Chat = ({
           </button>
           <div
             ref={ref}
-            className="space-y-16 flex flex-col max-h-[600px] overflow-y-auto px-24 pb-16"
+            className="space-y-16 flex flex-col max-h-[600px] overflow-y-auto pl-24 sm:px-24 pb-16"
           >
             {messages.map((message) => (
               <div
                 key={message.id}
-                className={`p-12 max-w-[80%] rounded-3xl flex gap-12 items-center ${
+                className={`p-12 max-w-[90%] rounded-3xl flex gap-12 items-center ${
                   message.type === "bot"
                     ? "bg-blue-500 text-left rounded-bl-none self-start"
                     : "bg-green-500 text-right rounded-br-none self-end flex-row-reverse"
