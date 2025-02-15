@@ -63,7 +63,7 @@ const Chat = ({
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "embed-multilingual-v3.0",
+        model: "4f3adf38-082a-44b8-a773-78fdfc42309c-ft",
         inputs: [question],
         examples: examples,
       }),
