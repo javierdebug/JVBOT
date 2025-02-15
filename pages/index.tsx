@@ -133,7 +133,7 @@ const SPANISH_ANSWERS = {
   intro: (
     <p>
       Hey, este es JVBOT. Soy un chatbot generado con IA que puede responder
-      questions about Javier Vargas.
+      preguntas sobre Javier Vargas.
     </p>
   ),
   contact: (
