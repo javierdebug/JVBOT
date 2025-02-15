@@ -27,7 +27,7 @@ const Chat = ({
   onChangeLanguage,
 }: Chat) => {
   const [messages, setMessages] = useState<Message[]>(() =>
-    initialMessages ? initialMessages : []
+    initialMessages ? initialMessages : [],
   );
   useEffect(() => {
     setMessages(initialMessages);
