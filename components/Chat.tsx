@@ -63,7 +63,7 @@ const Chat = ({
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "4f3adf38-082a-44b8-a773-78fdfc42309c-ft",
+        model: "4df42cc2-81d1-424c-9bf4-2d316f76f91a-ft",
         inputs: [question],
         examples: examples,
       }),
