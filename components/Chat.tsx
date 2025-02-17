@@ -119,8 +119,7 @@ const Chat = ({
     return (
       <div className="h-full w-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-h-[800px] grid grid-cols-12">
         {/* <div className="h-full w-full absolute bottom-50 right-0 sm:right-10 max-h-[600px] grid grid-cols-12"> */}
-        <section className="relative flex flex-col justify-between bg-slate-800 col-span-full sm:col-span-8 sm:col-start-3 xl:col-span-4 xl:col-start-5 2xl:w-[80%] 2xl:mx-auto m-20 p-20 border border-gray-300 rounded-lg space-y-16">
-          {/* <section className="relative bg-slate-800 col-span-full sm:col-span-6 lg:col-span-4 !col-end-13 m-20 p-20 border border-gray-300 rounded-lg space-y-16"> */}
+        <section className="relative flex flex-col justify-between bg-slate-800 col-span-full sm:col-span-8 sm:col-start-3 xl:col-span-4 xl:col-start-5 2xl:w-[80%] 2xl:mx-auto m-20 p-20 border border-gray-300 rounded-lg space-y-16 bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
           <button
             onClick={() => setIsOpen(false)}
             className="absolute -left-16 -top-12 bg-red-400 text-white rounded-full w-20 md:w-32 lg:w-40 aspect-square p-16"
