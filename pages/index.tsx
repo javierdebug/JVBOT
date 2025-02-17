@@ -80,8 +80,8 @@ const ANSWERS = {
     <p>
       I'm proficient with TypeScript, Next.js, and TailwindCSS; I've developed
       projects for more than three years as a freelance developer in multiple
-      projects. For the past 2 years, I've been working as a Frontend Developer
-      in a development agency on different projects for international
+      projects. For the past three years, I've been working as a Frontend
+      Developer in a development agency on different projects for international
       businesses.
     </p>
   ),
@@ -172,7 +172,7 @@ const SPANISH_ANSWERS = {
     <p>
       Soy experto en TypeScript, Next.js y TailwindCSS; he desarrollado
       proyectos durante más de tres años como desarrollador freelance en varios
-      proyectos. Durante los últimos dos años, he trabajado como desarrollador
+      proyectos. Durante los últimos tres años, he trabajado como desarrollador
       frontend en una agencia de desarrollo en diferentes proyectos para
       empresas internacionales.
     </p>
