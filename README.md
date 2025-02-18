@@ -30,7 +30,7 @@ This AI-powered chatbot was created to offer potential clients and collaborators
 
 ### General chat:
 
-![General chat](./public/general-jvbot-chat.jpg)
+![General chat](./public/general-jvbot-chat_shot.jpg)
 
 ### Language selection:
 
