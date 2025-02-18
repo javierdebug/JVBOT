@@ -34,4 +34,4 @@ This AI-powered chatbot was created to offer potential clients and collaborators
 
 ### Language selection:
 
-![Language selection](./public/language-selection.png)
+![Language selection](./public/language-selection_shot.jpeg)
