@@ -80,8 +80,8 @@ const ANSWERS = {
     <p>
       I'm proficient with TypeScript, Next.js, and TailwindCSS; I've developed
       projects for more than three years as a freelance developer in multiple
-      projects. For the past three years, I've been working as a Frontend
-      Developer in a development agency on different projects for international
+      projects. For the past three years, I've worked as a front-end developer
+      in a development agency, working on different projects for international
       businesses.
     </p>
   ),
