@@ -199,9 +199,10 @@ const Chat = ({
 
   return (
     <div className="relative h-full w-full">
-      <div className="absolute space-y-20 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="absolute space-y-40 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <select
           className="w-full py-10 px-12"
+          name="userLanguage"
           value={userLanguage}
           placeholder="Select language"
           onChange={(e) => onChangeLanguage(e.target.value as "en" | "es")}
