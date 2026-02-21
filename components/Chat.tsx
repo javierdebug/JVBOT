@@ -11,18 +11,14 @@ export type Message = {
 
 interface Chat {
   initialMessages: Message[];
-  examples: { text: string; label: string }[];
   answers: Record<string, React.ReactNode>;
-  apiKey: string;
   userLanguage: "en" | "es";
   onChangeLanguage: (language: "en" | "es") => void;
 }
 
 const Chat = ({
   initialMessages,
-  examples,
   answers,
-  apiKey,
   userLanguage,
   onChangeLanguage,
 }: Chat) => {
@@ -56,28 +52,29 @@ const Chat = ({
       text: question,
     });
 
-    const response = await fetch("https://api.cohere.com/v1/classify", {
+    // Get classification from Hugging Face
+    const classification = await fetch("/api/classify", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "4df42cc2-81d1-424c-9bf4-2d316f76f91a-ft",
-        inputs: [question],
-        examples: examples,
+        text: question,
       }),
-    });
-    const { classifications } = await response.json();
-    if (
-      classifications?.[0]?.prediction === "unknow" ||
-      classifications?.[0]?.prediction === "intro"
-    ) {
+    }).then((response) => response.json());
+
+    const category =
+      classification.classification?.confidence > 0.4
+        ? classification?.classification?.label
+        : "intro";
+
+    if (category === "unknow" || category === "intro") {
       setWeirdTimes((prev) => prev + 1);
+    } else {
+      setWeirdTimes(0);
     }
 
-    let answerToRender =
-      answers[classifications?.[0]?.prediction] || answers.unknow;
+    let answerToRender = answers[category] || answers.unknow;
 
     if (weirdTimes > 2) {
       setWeirdTimes(0);
@@ -118,7 +115,6 @@ const Chat = ({
   if (isOpen) {
     return (
       <div className="h-full w-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-h-[800px] grid grid-cols-12">
-        {/* <div className="h-full w-full absolute bottom-50 right-0 sm:right-10 max-h-[600px] grid grid-cols-12"> */}
         <section className="relative flex flex-col justify-between bg-slate-800 col-span-full sm:col-span-8 sm:col-start-3 xl:col-span-4 xl:col-start-5 2xl:w-[80%] 2xl:mx-auto m-20 p-20 border border-gray-300 rounded-lg space-y-16 bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
           <button
             onClick={() => setIsOpen(false)}
@@ -164,7 +160,7 @@ const Chat = ({
                     />
                   )}
                 </div>
-                <p>{message.text}</p>
+                <div className="flex flex-col">{message.text}</div>
               </div>
             ))}
           </div>
