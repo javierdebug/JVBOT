@@ -4,7 +4,7 @@ Live site: [JVBOT](https://jvbot.vercel.app/)
 
 ## Project Overview
 
-This AI-powered chatbot is created to offer potential clients and collaborators an interactive experience, helping users understand my expertise as a frontend developer. Whether it's answering questions about my skills, past projects, or the technologies I use, this chatbot provides responses to support informed engagement. This chatbot was built with a text classifier model from [CoHere](https://cohere.com/).
+This AI-powered chatbot is created to offer potential clients and collaborators an interactive experience, helping users understand my expertise as a frontend developer. Whether it's answering questions about my skills, past projects, or the technologies I use, this chatbot provides responses to support informed engagement. This chatbot was built with a text classifier model from [HugginFace](https://huggingface.co).
 
 ## Features
 
@@ -24,7 +24,7 @@ This AI-powered chatbot is created to offer potential clients and collaborators 
 ## Technologies
 
 - **Frontend**: Next.js, Tailwind CSS
-- **AI**: CoHere API
+- **AI**: Hugging Face API
 
 ## Screenshots
 
