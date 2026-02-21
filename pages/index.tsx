@@ -77,16 +77,16 @@ const ANSWERS = {
   ),
   stack: (
     <p>
-      I'm proficient with TypeScript, Next.js, and TailwindCSS; I've developed
-      projects for more than three years as a freelance developer in multiple
-      projects. For the past three years, I've worked as a front-end developer
+      I'm proficient with TypeScript, Node.js y React.js; I've developed
+      projects for more than seven years as a developer in multiple
+      projects. For the past 3+ years, I've worked as a full stack developer
       in a development agency, working on different projects for international
       businesses.
     </p>
   ),
   work: (
     <p>
-      I'm currently working as a Frontend Developer at{" "}
+      I'm currently working as a Full Stack Developer at{" "}
       <a
         href="https://wondercraft.co/"
         target="_blank"
@@ -100,7 +100,7 @@ const ANSWERS = {
   ),
   english: (
     <p>
-      I'm proficient with English, I've been working as a freelancer for three
+      I'm proficient with English, I've been working as a developer for 7+
       years and I've had the opportunity to work with clients from different
       countries. I obtained a C2 level (78/100) in the EFSET exam; you can check
       my EFSET certification in the following link:{" "}
@@ -169,16 +169,16 @@ const SPANISH_ANSWERS = {
   ),
   stack: (
     <p>
-      Soy experto en TypeScript, Next.js y TailwindCSS; he desarrollado
-      proyectos durante más de tres años como desarrollador freelance en varios
-      proyectos. Durante los últimos tres años, he trabajado como desarrollador
-      frontend en una agencia de desarrollo en diferentes proyectos para
+      Soy experto en TypeScript, Node.js y React.js; he desarrollado
+      proyectos durante más de siete años como desarrollador en varios
+      proyectos. Durante los últimos 3+ años, he trabajado como desarrollador
+      Full Stack en una agencia de desarrollo en diferentes proyectos para
       empresas internacionales.
     </p>
   ),
   work: (
     <p>
-      Actualmente trabajo como Desarrollador Frontend en{" "}
+      Actualmente trabajo como Desarrollador Full Stack en{" "}
       <a
         href="https://wondercraft.co/"
         target="_blank"
@@ -192,8 +192,8 @@ const SPANISH_ANSWERS = {
   ),
   english: (
     <p>
-      Manejo un inglés profesional avanzado, he trabajado como freelancer
-      durante tres años y he tenido la oportunidad de trabajar con clientes de
+      Manejo un inglés profesional avanzado, he trabajado como desarrollador
+      durante siete años y he tenido la oportunidad de trabajar con clientes de
       diferentes países. Obtuve un nivel C2 (78/100) en el examen EFSET; puedes
       revisar mi certificación EFSET en el siguiente enlace:{" "}
       <a
@@ -227,7 +227,7 @@ const IndexPage = () => {
     {
       id: "1",
       type: "bot",
-      text: "Hey, this is JVBOT; ask me your questions about Javier Vargas and his professional experience as a frontend developer",
+      text: "Hey, this is JVBOT; ask me your questions about Javier Vargas and his professional experience as a full stack developer",
     },
   ]);
 
@@ -235,10 +235,10 @@ const IndexPage = () => {
     let initialBotMessage: string;
     if (userLanguage === "en") {
       initialBotMessage =
-        "Hey, this is JVBOT; ask me your questions about Javier Vargas and his professional experience as a frontend developer";
+        "Hey, this is JVBOT; ask me your questions about Javier Vargas and his professional experience as a full stack developer";
     } else {
       initialBotMessage =
-        "Hey, este es JVBOT; puedes hacerme preguntas sobre Javier Vargas y su experiencia profesional como desarrollador frontend";
+        "Hey, este es JVBOT; puedes hacerme preguntas sobre Javier Vargas y su experiencia profesional como desarrollador full stack";
     }
 
     const newInitialMessages: Message[] = [
